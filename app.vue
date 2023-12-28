@@ -2,9 +2,10 @@
 import { defineNuxtComponent } from '#app'
 
 export default defineNuxtComponent({
-  data: () => {({
+  data: () => {
+    return {
       todoList: []
-    })
+    }
   },
   methods: {
     fetchTodoList() {
