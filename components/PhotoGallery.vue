@@ -28,6 +28,9 @@ function fetchPhotoGallery() {
   title="PICS"
   v-model:itemList="photoGallery"
 >
+    <template v-slot:metrics>
+      <h3>Odd albums: {{ oddAlbums.length }} | Even Albums: {{ evenAlbums.length }}</h3>
+    </template>
     <template v-slot:items>
       <li class="list-item" v-for="photo in photoGallery" :key="`photo-id-${photo.id}`">
           <img :src="photo.thumbnailUrl" />

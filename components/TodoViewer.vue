@@ -15,14 +15,6 @@ const completedItems = computed(() => {
 const remainingItems = computed(() => {
   return todoList.value.filter(item => !item.completed)
 })
-
-function fetchTodoList() {
-  fetch('https://jsonplaceholder.typicode.com/todos')
-    .then(response => response.json())
-    .then(json => {
-      todoList.value = json
-    });
-}
 </script>
 
 <template>
@@ -55,8 +47,4 @@ function fetchTodoList() {
 
   or you can use naming conventions like BEM which is more of a convention/disgression
 */
-.listItems {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
 </style>
