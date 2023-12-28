@@ -1,6 +1,4 @@
 <script setup>
-import { computed, defineProps, ref } from 'vue'
-
 defineProps({
     title: {
         type: String,

@@ -1,6 +1,4 @@
 <script setup>
-import { computed, ref } from 'vue'
-
 let photoGallery = ref([])
 
 const numberOfPhotos = computed(() => {
