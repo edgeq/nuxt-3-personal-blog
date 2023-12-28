@@ -1,5 +1,12 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, defineProps, ref } from 'vue'
+
+defineProps({
+    title: {
+        type: String,
+        default: 'Default Title, Baby!'
+    }
+})
 
 let todoList = ref([]);
 
@@ -23,15 +30,18 @@ function fetchTodoList() {
 <template>
   <section class="section">
     <div class="content">
-      <h1 class="title">TODO LIST</h1>
-      <button class="button" @click="fetchTodoList">Fetch ToDos</button>
-      <h2>Complete: {{ completedItems.length }} | Remaining: {{ remainingItems.length }}</h2>
-      <ul :class="todo.listItems">
-        <li v-for="todo in todoList" :key="`todo-id-${todo.id}`">
-          <input type="checkbox" :checked="todo.completed" />
-          {{ todo.title }}
-        </li>
-      </ul>
+        <!--Slots are fill-in-the-blank-->
+        <h1>FE TODO VIEWER</h1>
+        <slot name="hero"/>
+        <button class="button" @click="fetchTodoList">Fetch ToDos</button>
+        <h3>Complete: {{ completedItems.length }} | Remaining: {{ remainingItems.length }}</h3>
+        <slot name="metrics" :completed="completedItems"/>
+        <ul :class="todo.listItems">
+            <li v-for="todo in todoList" :key="`todo-id-${todo.id}`">
+            <input type="checkbox" :checked="todo.completed" />
+            {{ todo.title }}
+            </li>
+        </ul>
     </div>
   </section>
 </template>
