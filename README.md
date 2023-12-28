@@ -1,6 +1,9 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Fundamentals
+Following along with [Frontend Masters Nuxt Fundamentals](https://frontendmasters.com/courses/nuxt) course.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Each branch is a new concept. 
+
+See [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
