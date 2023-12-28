@@ -32,9 +32,9 @@ const emit = defineEmits(['update:itemList'])
     <!--Generic templates-->
     <section class="section">
         <div class="content">
+            <h1 class="title"> {{ title }}</h1>
             <slot name="hero" />
     
-            <h1 class="title"> {{ title }}</h1>
     
             <button @click="fetchItemList">Fetch Data</button>
     

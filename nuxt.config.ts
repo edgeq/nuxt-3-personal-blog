@@ -4,5 +4,5 @@ export default defineNuxtConfig({
   css: [
     "~/node_modules/bulma/bulma.sass",
     "~/assets/style/main.scss",
-  ]
+  ],
 })

@@ -23,9 +23,15 @@ const remainingItems = computed(() => {
     title="TASKS"
     v-model:itemList="todoList"
   >
-    <template v-slot:metrics>
-      <h3>Complete: {{ completedItems.length }} | Remaining: {{ remainingItems.length }}</h3>
-    </template>
+  <template v-slot:hero>
+    <figure>
+      <img src="/eq-banjo.jpeg" alt="Handsome man with a banjitar">
+      <figcaption>A handsome man with a banjitar in hand</figcaption>
+    </figure>
+  </template>
+  <template v-slot:metrics>
+    <h3>Complete: {{ completedItems.length }} | Remaining: {{ remainingItems.length }}</h3>
+  </template>
 
     <template v-slot:items>
       <li v-for="todo in todoList">
