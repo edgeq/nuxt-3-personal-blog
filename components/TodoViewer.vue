@@ -28,23 +28,18 @@ function fetchTodoList() {
 </script>
 
 <template>
-  <section class="section">
-    <div class="content">
-        <!--Slots are fill-in-the-blank-->
-        <h1>FE TODO VIEWER</h1>
-        <slot name="hero"/>
-        <button class="button" @click="fetchTodoList">Fetch ToDos</button>
-        <slot name="metrics" :completed="completedItems" :remaining="remainingItems">
-            <h3>Complete: {{ completedItems.length }} | Remaining: {{ remainingItems.length }}</h3>
-        </slot>
-        <ul :class="todo.listItems">
-            <li v-for="todo in todoList" :key="`todo-id-${todo.id}`">
-            <input type="checkbox" :checked="todo.completed" />
-            {{ todo.title }}
-            </li>
-        </ul>
-    </div>
-  </section>
+  <BaseDisplay
+    itemType="todos"
+    title="TASKS"
+    v-model:itemList="todoList"
+  >
+    <template v-slot:hero>
+      <!--<pre>{{ todoList }}</pre>-->
+    </template>
+    <template v-slot:metrics>
+      <h3>Complete: {{ completedItems.length }} | Remaining: {{ remainingItems.length }}</h3>
+    </template>
+  </BaseDisplay>
 </template>
 
 <style module="todo" lang="scss">
