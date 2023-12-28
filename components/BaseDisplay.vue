@@ -31,19 +31,29 @@ const emit = defineEmits(['update:itemList'])
 <template>
     <!--Generic templates-->
     <section class="section">
-        <slot name="hero" />
-
-        <h1 class="title"> {{ title }}</h1>
-
-        <button @click="fetchItemList">Fetch Data</button>
-
-        <slot name="metrics" />
-
-        <ul class="list" :class="{'photo-gallery-list': props.itemType === 'photos'}">
-            <slot name="items" :itemList="itemList"/>
-        </ul>
+        <div class="content">
+            <slot name="hero" />
+    
+            <h1 class="title"> {{ title }}</h1>
+    
+            <button @click="fetchItemList">Fetch Data</button>
+    
+            <slot name="metrics" />
+    
+            <ul class="list" :class="[
+                {'photo-gallery-list': props.itemType === 'photos'},
+                {'todo-list': props.itemType === 'todos'},
+                ]">
+                <slot name="items" :itemList="itemList"/>
+            </ul>
+        </div>
     </section>
 </template>
 
-<style lang="sass"> 
+<style lang="scss"> 
+.todo-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
 </style>

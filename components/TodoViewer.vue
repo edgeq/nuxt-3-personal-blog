@@ -31,11 +31,15 @@ function fetchTodoList() {
     title="TASKS"
     v-model:itemList="todoList"
   >
-    <template v-slot:hero>
-      <!--<pre>{{ todoList }}</pre>-->
-    </template>
     <template v-slot:metrics>
       <h3>Complete: {{ completedItems.length }} | Remaining: {{ remainingItems.length }}</h3>
+    </template>
+
+    <template v-slot:items>
+      <li v-for="todo in todoList">
+        <input type="checkbox" :checked="todo.completed">
+        {{ todo.title }}
+      </li>
     </template>
   </BaseDisplay>
 </template>
