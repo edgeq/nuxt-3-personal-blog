@@ -4,7 +4,7 @@ import { computed, ref } from 'vue'
 // https://vuejs.org/guide/essentials/reactivity-fundamentals.html
 // ref vs reactive
 // ref is recommended for most data types because reactive is limited to object types
-// and reactivity is lost when destructuring or replacing
+// and reactivity is lost when destructuring or replacing objects
 // see link for more info:
 // https://vuejs.org/guide/essentials/reactivity-fundamentals.html#limitations-of-reactive
 let photoGallery = ref([]);
