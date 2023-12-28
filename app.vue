@@ -21,18 +21,22 @@ function fetchTodoList() {
 </script>
 
 <template>
-  <h1>TODO LIST</h1>
-  <button @click="fetchTodoList">Fetch ToDos</button>
-  <p>Complete: {{ completedItems.length }} | Remaining: {{ remainingItems.length }}</p>
-  <ul :class="todo.listItems">
-    <li v-for="todo in todoList" :key="`todo-id-${todo.id}`">
-      <input type="checkbox" :checked="todo.completed" />
-      {{ todo.title }}
-    </li>
-  </ul>
+  <section class="section">
+    <div class="content">
+      <h1 class="title">TODO LIST</h1>
+      <button class="button" @click="fetchTodoList">Fetch ToDos</button>
+      <h2>Complete: {{ completedItems.length }} | Remaining: {{ remainingItems.length }}</h2>
+      <ul :class="todo.listItems">
+        <li v-for="todo in todoList" :key="`todo-id-${todo.id}`">
+          <input type="checkbox" :checked="todo.completed" />
+          {{ todo.title }}
+        </li>
+      </ul>
+    </div>
+  </section>
 </template>
 
-<style module="todo">
+<style module="todo" lang="scss">
 /* 
   modules are a way to scope css - note the use of camelCase classNames
     https://vuejs.org/api/sfc-css-features.html#css-modules
