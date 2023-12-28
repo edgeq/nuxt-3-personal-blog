@@ -34,8 +34,9 @@ function fetchTodoList() {
         <h1>FE TODO VIEWER</h1>
         <slot name="hero"/>
         <button class="button" @click="fetchTodoList">Fetch ToDos</button>
-        <h3>Complete: {{ completedItems.length }} | Remaining: {{ remainingItems.length }}</h3>
-        <slot name="metrics" :completed="completedItems"/>
+        <slot name="metrics" :completed="completedItems" :remaining="remainingItems">
+            <h3>Complete: {{ completedItems.length }} | Remaining: {{ remainingItems.length }}</h3>
+        </slot>
         <ul :class="todo.listItems">
             <li v-for="todo in todoList" :key="`todo-id-${todo.id}`">
             <input type="checkbox" :checked="todo.completed" />

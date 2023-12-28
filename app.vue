@@ -25,7 +25,7 @@
             <template v-slot:metrics="{ completed }">
               <strong v-if="completed.length"> {{ completed.length}} items complete</strong>
               <span v-else>Nothing done!</span>
-              <pre>{{ completed }}</pre>
+              <pre>{{ completed }}</pre> 
             </template>
           </TodoViewer>
         </div>
