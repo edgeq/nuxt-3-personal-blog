@@ -1,7 +1,9 @@
 <script setup>
+const { x, y } = useMouse()
 definePageMeta({
     layout: 'admin'
-})
+});
+
 function doSomethingOnLoad(e) {
     console.log('LOADED', e);
 }
@@ -10,6 +12,7 @@ function doSomethingOnLoad(e) {
 <template>
     <section class="section">
         <h2>SHOULD BE LOGGED IN</h2>
+        <h3>MouseX: {{ x }}, MouseY: {{ y }}</h3>
         <IconSpinner />
         <!-- regular images are ok.. but we can do better -->
         <!-- <img src="/assets/img/eq-banjo.jpeg" alt="Handsome man with a banjo in hand"> -->
