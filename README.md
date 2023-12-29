@@ -1,5 +1,5 @@
 # Nuxt 3 Fundamentals
-Following along with [Frontend Masters Nuxt Fundamentals](https://frontendmasters.com/courses/nuxt) course.
+Following along with [Frontend Masters Nuxt Fundamentals](https://frontendmasters.com/courses/nuxt) course and [CodeWithGuillame's YouTube Course](https://youtube.com/playlist?list=PL8HkCX2C5h0XT3xWYn71TlsAAo0kizmVc&si=3DTTCgOzedCw8FnW).
 
 Each branch is a new concept. 
 
