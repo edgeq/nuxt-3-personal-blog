@@ -21,15 +21,11 @@
                     <NuxtLink to="/" class="navbar-item">
                         Home
                     </NuxtLink>
-
-                    <NuxtLink to="/display" class="navbar-item">
-                        Display
+                    <NuxtLink to="/events" class="navbar-item">
+                        Events
                     </NuxtLink>
-                    <NuxtLink to="/display/todos" class="navbar-item">
-                        Todos
-                    </NuxtLink>
-                    <NuxtLink to="/display/photos" class="navbar-item">
-                        Photos
+                    <NuxtLink to="/profile" class="navbar-item">
+                        Profile
                     </NuxtLink>
                 </div>
             </div>

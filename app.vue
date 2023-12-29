@@ -1,5 +1,11 @@
 <!-- In nuxt 3 components are auto-loaded -->
 <template>
-  <NavbarMain />
-  <NuxtPage />
+  <NuxtLayout>
+    <header>
+      <NavbarMain />
+    </header>
+    <main>
+      <NuxtPage />
+    </main>
+  </NuxtLayout>
 </template>
