@@ -25,6 +25,12 @@
                     <NuxtLink to="/display" class="navbar-item">
                         Display
                     </NuxtLink>
+                    <NuxtLink to="/display/todos" class="navbar-item">
+                        Todos
+                    </NuxtLink>
+                    <NuxtLink to="/display/photos" class="navbar-item">
+                        Photos
+                    </NuxtLink>
                 </div>
             </div>
         </div>

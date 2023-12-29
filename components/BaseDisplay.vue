@@ -1,5 +1,5 @@
 <script setup>
-// Make a generic list item component
+// Generic list item component
 let itemList = ref([]);
 
 const props = defineProps({
@@ -7,23 +7,24 @@ const props = defineProps({
         type: Array,
         default: () => [],
     },
-    itemType: {
-        type: String,
-        required: true,
-    },
     title: {
         type: String,
         required: true,
     }
 })
 
-function fetchItemList() {
-  fetch(`https://jsonplaceholder.typicode.com/${props.itemType}`)
-    .then(response => response.json())
-    .then(json => {
-      emit('update:itemList', json)
-    });
-}
+const route = useRoute()
+console.log('BD ROUTE', route)
+const itemType = route.path.split('/')[2];
+
+onMounted(() => {
+    fetch(`https://jsonplaceholder.typicode.com/${itemType}`)
+        .then(response => response.json())
+        .then(json => {
+            emit('update:itemList', json)
+        });
+    window.console.log(route.query)
+})
 
 const emit = defineEmits(['update:itemList'])
 </script>
@@ -34,15 +35,11 @@ const emit = defineEmits(['update:itemList'])
         <div class="content">
             <h1 class="title"> {{ title }}</h1>
             <slot name="hero" />
-    
-    
-            <button @click="fetchItemList">Fetch Data</button>
-    
             <slot name="metrics" />
     
             <ul class="list" :class="[
-                {'photo-gallery-list': props.itemType === 'photos'},
-                {'todo-list': props.itemType === 'todos'},
+                {'photo-gallery-list': itemType === 'photos'},
+                {'todo-list': itemType === 'todos'},
                 ]">
                 <slot name="items" :itemList="itemList"/>
             </ul>
