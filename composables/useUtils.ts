@@ -11,7 +11,6 @@ export const useUtils = () => {
         sayHello(),
     )
 
-
     return {
         sayHello,
         logNuxt,
