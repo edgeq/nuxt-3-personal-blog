@@ -13,13 +13,6 @@ const oddAlbums = computed(() => {
   return photoGallery.value.filter(item => !(item.albumId % 2 === 0))
 })
 
-function fetchPhotoGallery() {
-  fetch('https://jsonplaceholder.typicode.com/photos')
-    .then(response => response.json())
-    .then(json => {
-      photoGallery.value = json
-    })
-}
 </script>
 
 <template>
