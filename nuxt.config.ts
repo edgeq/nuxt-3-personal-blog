@@ -5,4 +5,10 @@ export default defineNuxtConfig({
     "~/node_modules/bulma/bulma.sass",
     "~/assets/style/main.scss",
   ],
+  modules: [
+    '@nuxt/image',
+  ],
+  image: {
+    dir: 'assets/img'
+  }
 })
