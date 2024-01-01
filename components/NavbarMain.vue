@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <NuxtLink class="navbar-item" to="/">
                 <IconSpinner />
@@ -16,22 +16,31 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
             </div>
-
-            <div class="navbar-end">
-                <NuxtLink to="/" class="navbar-item">
-                    Home
-                </NuxtLink>
-                <NuxtLink to="/events" class="navbar-item">
-                    Events
-                </NuxtLink>
-                <NuxtLink to="/profile" class="navbar-item">
-                    Profile
-                </NuxtLink>
-            </div>
+            <ClientOnly>
+                <div class="navbar-end">
+                    <NuxtLink to="/" class="navbar-item">
+                        <font-awesome-icon icon="fas fa-home" class="nav-icon"/>
+                        Home
+                    </NuxtLink>
+                    <NuxtLink to="/events" class="navbar-item">
+                        <font-awesome-icon :icon="['fas', 'calendar-days']" class="nav-icon"/>
+                        Events
+                    </NuxtLink>
+                    <NuxtLink to="/profile" class="navbar-item">
+                        <font-awesome-icon :icon="['fas', 'fa-user']" class="nav-icon"/>
+                        Profile
+                    </NuxtLink>
+                </div>
+            </ClientOnly>
         </div>
     </nav>
 </template>
 
 <style lang="scss">
-
+.is-fixed-top {
+    margin-block-end: 54px;
+}
+.nav-icon {
+    margin-inline-end: 4px;
+}
 </style>
