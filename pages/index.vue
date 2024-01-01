@@ -2,7 +2,7 @@
     <ClientOnly>
         <section class="block header">
             <span class="loader-by-class"></span>
-            <h1 class="title is-1">RUBRIC?</h1>
+            <h1 class="title is-1">Riffs+Bits</h1>
         </section>
         <section class="block content">
             <h2 class="subtitle icon-text">
@@ -104,6 +104,11 @@ $primaryColor: hsl(171deg, 100%, 41%);
     gap: 8px;
     align-items: center;
     margin-block-start: 56px;
+
+    .title {
+        font-family: 'Pixelify Sans';
+        font-weight: 700;
+    }
 }
 
 .tag-container {
