@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: [
+    '@fortawesome/fontawesome-svg-core/styles.css',
     "~/node_modules/bulma/bulma.sass",
     "~/assets/style/main.scss",
   ],

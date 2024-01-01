@@ -1,0 +1,12 @@
+// @import "~/node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "~/node_modules/bulma/sass/utilities/derived-variables.sass";
+// $primary: black;
+
+html, body {
+     background-color: $primary;
+     color: findLightColor($primary);
+
+     main {
+        height: 100vh;
+     }
+}

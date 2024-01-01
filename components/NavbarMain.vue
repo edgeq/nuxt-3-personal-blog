@@ -1,15 +1,16 @@
 <template>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <NuxtLink class="navbar-item" to="/">
-                MyRecs
+                <IconSpinner />
+                Riffs+Bits
             </NuxtLink>
             <!--MOBILE-->
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <button role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-            </a>
+            </button>
         </div>
 
         <div id="navbarBasicExample" class="navbar-menu">
@@ -17,18 +18,20 @@
             </div>
 
             <div class="navbar-end">
-                <div class="navbar-item">
-                    <NuxtLink to="/" class="navbar-item">
-                        Home
-                    </NuxtLink>
-                    <NuxtLink to="/events" class="navbar-item">
-                        Events
-                    </NuxtLink>
-                    <NuxtLink to="/profile" class="navbar-item">
-                        Profile
-                    </NuxtLink>
-                </div>
+                <NuxtLink to="/" class="navbar-item">
+                    Home
+                </NuxtLink>
+                <NuxtLink to="/events" class="navbar-item">
+                    Events
+                </NuxtLink>
+                <NuxtLink to="/profile" class="navbar-item">
+                    Profile
+                </NuxtLink>
             </div>
         </div>
     </nav>
 </template>
+
+<style lang="scss">
+
+</style>
