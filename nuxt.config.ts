@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       Syne: {
         wght: '400..800',
       },
-      // Roboto: true,
+      Roboto: true,
       // 'Josefin+Sans': true,
       // Lato: [100, 300],
       // Raleway: {

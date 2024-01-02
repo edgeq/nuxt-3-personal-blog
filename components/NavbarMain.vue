@@ -3,7 +3,7 @@
         <div class="navbar-brand">
             <NuxtLink class="navbar-item" to="/">
                 <IconSpinner />
-                Riffs+Bits
+                <span class="title is-1">Riffs+Bits</span>
             </NuxtLink>
             <!--MOBILE-->
             <button role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -42,5 +42,10 @@
 }
 .nav-icon {
     margin-inline-end: 4px;
+}
+.title {
+    color: white;
+    font-family: 'Pixelify Sans';
+    font-weight: 700;
 }
 </style>
