@@ -1,3 +1,9 @@
+<script setup>
+const api = await $fetch('/api/hello');
+const { data } = await useLazyFetch('https://jsonplaceholder.typicode.com/posts')
+console.log(api)
+console.log(data.value)
+</script>
 <template>
     <ClientOnly>
         <section class="block header">
