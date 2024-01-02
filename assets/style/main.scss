@@ -5,8 +5,8 @@
 html, body {
     background-color: $primary;
     color: findLightColor($primary);
-    // font-family: 'Josefin Sans', sans-serif;
-    // font-family: 'Roboto', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     h1, h2, h3 {
        font-family: 'Syne', sans-serif;
     }
