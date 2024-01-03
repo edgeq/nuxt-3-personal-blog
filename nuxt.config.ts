@@ -1,19 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  content: {},
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
     "~/node_modules/bulma/bulma.sass",
     "~/assets/style/main.scss",
   ],
-  modules: [
-    '@nuxt/image',
-    "@vueuse/nuxt",
-    "@nuxtjs/google-fonts",
-  ],
-  image: {
-    dir: 'assets/img'
-  },
+  devtools: { enabled: true },
   googleFonts: {
     families: {
       Syne: {
@@ -25,5 +18,9 @@ export default defineNuxtConfig({
         wght: '400..700'
       }
     }
-  }
+  },
+  image: {
+    dir: 'assets/img'
+  },
+  modules: ['@nuxt/image', "@vueuse/nuxt", "@nuxtjs/google-fonts", "@nuxt/content"]
 })

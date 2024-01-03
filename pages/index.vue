@@ -12,13 +12,13 @@
                     Engineer for the Web.
                 </h2>
                 <p :class="['paragraph', homePage.hero_paragraph]">
-                    Hi there. My name is Edgar, but I also go by Edge.
+                    Hi there. My name is Edgar. I also go by Edge.
                 </p>
                 <p :class="['paragraph', homePage.hero_paragraph]">
                     I exist at the intersection of web technologies
-                    and mission-driven work with interests in building useful things in
+                    and mission-driven work. My interests are in building useful things in
                     the EdTech, Creative Engineering, 
-                    and Code in Non-Profit spaces.
+                    and Code for Non-Profit spaces.
                 </p>
                 <p :class="['paragraph', homePage.hero_paragraph]">
                     I'm currently a Senior Software Engineer at Discovery Education
@@ -43,8 +43,9 @@
 .hero {
     &_paragraph {
         color: $grey-dark;
-        margin-block-end: 8px;
+        margin-block-end: 16px;
         font-family: 'Inter', sans-serif;
+        font-size: larger;
         font-weight: 600;
         line-height: 1.75;
     }
