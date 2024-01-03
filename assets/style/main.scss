@@ -5,14 +5,15 @@
 html, body {
     background-color: findLightColor($primary);;
 
-    h1, h2, h3 {
+    h1, .title {
+      font-family: 'Pixelify Sans';
+    }
+    
+    h2, h3 {
        font-family: 'Inter', sans-serif;
     }
 
      main {
       margin-block-start: 86px;
-      .title {
-         font-family: 'Pixelify Sans';
-      }
    }
 }
