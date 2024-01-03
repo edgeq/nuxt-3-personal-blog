@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar level is-fixed-top is-dark">
         <NuxtLink to="/" class="title is-1 main-title">Riffs+Bits</NuxtLink>
-        <NuxtLink to="/about" class="title is-3">About</NuxtLink>
+        <NuxtLink to="/" class="title is-3">About</NuxtLink>
         <NuxtLink to="/blog" class="title is-3">Blog</NuxtLink>
         <NuxtLink to="/contact" class="title is-3">Contact</NuxtLink>
     </nav>

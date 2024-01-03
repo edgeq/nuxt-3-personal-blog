@@ -1,4 +1,5 @@
 <script setup>
+// TODO: script for updating image on load or timer...?
 </script>
 <template>
     <section class="hero is-fullheight">
@@ -14,9 +15,10 @@
                     Hi there. My name is Edgar, but I also go by Edge.
                 </p>
                 <p :class="['paragraph', homePage.hero_paragraph]">
-                    I exist somewhere in the intersection of web technologies
-                    and mission-driven work with interests in EdTech, Creative Engineering, 
-                    and Code in the Non-Profit Space.
+                    I exist at the intersection of web technologies
+                    and mission-driven work with interests in building useful things in
+                    the EdTech, Creative Engineering, 
+                    and Code in Non-Profit spaces.
                 </p>
                 <p :class="['paragraph', homePage.hero_paragraph]">
                     I'm currently a Senior Software Engineer at Discovery Education
