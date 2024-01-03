@@ -3,15 +3,16 @@
 
 
 html, body {
-    background-color: $primary;
-    color: findLightColor($primary);
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    background-color: findLightColor($primary);;
+
     h1, h2, h3 {
-       font-family: 'Syne', sans-serif;
+       font-family: 'Inter', sans-serif;
     }
 
      main {
         height: 100vh;
+        .title {
+            font-family: 'Pixelify Sans';
+        }
      }
 }

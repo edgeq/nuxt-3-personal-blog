@@ -20,17 +20,7 @@ export default defineNuxtConfig({
         wght: '400..800',
       },
       Roboto: true,
-      // 'Josefin+Sans': true,
-      // Lato: [100, 300],
-      // Raleway: {
-      //   wght: [100, 400],
-      //   ital: [100]
-      // },
-      // Inter: '200..700',
-      // 'Crimson Pro': {
-      //   wght: '200..900',
-      //   ital: '200..700',
-      // },
+      Inter: '200..700',
       'Pixelify+Sans': {
         wght: '400..700'
       }

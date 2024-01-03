@@ -1,6 +1,7 @@
 <template>
     <header>
-      <NavbarMain />
+      <!--<NavbarMain />-->
+      <LevelMain />
     </header>
     <main>
       <slot />
