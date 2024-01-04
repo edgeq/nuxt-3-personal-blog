@@ -2,7 +2,7 @@
 // TODO: script for updating image on load or timer...?
 </script>
 <template>
-    <section class="hero is-fullheight">
+    <section class="hero">
       <div :class="['hero-body', 'container', homePage.heroContainer]">
           <div :class="['hero-left', homePage.heroLeft]">
               <h1 class="title">
@@ -51,6 +51,9 @@
     }
 }
 .heroContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     gap: 64px;
 
     .heroLeft {

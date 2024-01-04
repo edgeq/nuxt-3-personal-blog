@@ -1,10 +1,4 @@
 <script setup>
-const { onMountedLog } = useUtils();
-
-onMounted(() => {
-  onMountedLog()
-})
-
 </script>
 
 <template>
