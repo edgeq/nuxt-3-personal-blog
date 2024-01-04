@@ -4,7 +4,7 @@ console.log(posts.value)
 
 </script>
 <template>
-    <div class="container">
+    <div class="hero-body container">
         <div class="content">
             <h1>Blog Posts</h1>
             <ul>

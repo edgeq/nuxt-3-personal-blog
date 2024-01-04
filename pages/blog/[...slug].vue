@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="hero-body container">
         <div class="content">
             <ContentDoc v-slot="{ doc }">
                 <article>
