@@ -1,9 +1,13 @@
 <template>
-    <nav class="navbar level is-fixed-top is-dark">
-        <NuxtLink to="/" class="title is-1 main-title">RiffyBits</NuxtLink>
-        <NuxtLink to="/" class="title is-3">About</NuxtLink>
-        <NuxtLink to="/blog" class="title is-3">Blog</NuxtLink>
-        <NuxtLink to="/contact" class="title is-3">Contact</NuxtLink>
+    <nav class="navbar level is-fixed-top is-dark navbar-level">
+        <div class="navbar-brand">
+            <NuxtLink to="/" class="title is-1 main-title">RiffyBits</NuxtLink>
+        </div>
+        <div class="navbar-links">
+            <NuxtLink to="/" class="title is-3">About</NuxtLink>
+            <NuxtLink to="/blog" class="title is-3">Blog</NuxtLink>
+            <NuxtLink to="/contact" class="title is-3">Contact</NuxtLink>
+        </div>
     </nav>
 </template>
 
@@ -11,6 +15,23 @@
 .navbar {
     align-items: center;
     padding: 8px 16px 0;
+
+    &-links {
+        display: flex;
+        gap: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+        &-level {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-links {
+            gap: 16px;
+        }
+    }
+
 
     .title {
         color: white;

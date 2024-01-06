@@ -1,0 +1,76 @@
+{
+    "TECH STACK": {
+        "JavaScript": {
+            "Flavors": [
+                "TypeScript",
+                "Vanilla JS",
+                "JSX"
+            ],
+            "Frameworks: (Current)": [
+                "Vue",
+                "Nuxt",
+                "Express"
+            ],
+            "Frameworks (I've used)": [
+                "jQuery",
+                "Backbone",
+                "Marionette",
+                "React"
+            ],
+            "Build Tools": [
+                "Vite",
+                "Webpack"
+            ],
+            "Runtimes": [
+                "Node"
+            ]
+        },
+        "CSS": {
+            "PreProcessors": [
+                "Stylus",
+                "Less",
+                "Sass"
+            ],
+            "Design Systems": [
+                {"Contributor": [
+                    {"name": "Comet", "url": "https://comet.discoveryeducation.com/", "owner": "Discovery Education"},
+                    {"name": "Nebula", "url": "https://nebula.discoveryeducation.com/", "owner": "Discovery Education"}
+                ]},
+                {"User": [
+                    "Bulma",
+                    "Material Design",
+                    "Tailwind",
+                    "Vuetify"
+                ]}
+            ]
+        },
+        "HTML & Other Web Standards": {
+            "a11y / Accessibility": true,
+            "WCAG ^2.x": true,
+            "Semantic HTML": true,
+            "Web Components": true
+        },
+        "Backend Frameworks (enough to be dangerous)": {
+            "AWS": [
+                "Amplify",
+                "S3",
+                "EC2",
+                "Route 53",
+                "Lambda"
+            ],
+            "Firebase": [],
+            "PHP": [
+                "Drupal",
+                "Laravel",
+                "WordPress"
+            ],
+            "Python": [
+                "Django"
+            ]
+        },
+        "Database Languages": [
+            "SQL",
+            "MongoDB"
+        ]
+    }
+}

@@ -13,8 +13,15 @@ html, body {
        font-family: 'Inter', sans-serif;
     }
 
+    ul li {
+      list-style-type: none;
+    }
+
      main {
       // height of navbar
-      margin-block-start: 86px;
+      margin-block-start: 6.5rem;
+      @media (min-width: 768px) {
+         margin-block-start: 4rem;
+      }
    }
 }
