@@ -1,3 +1,14 @@
+<script setup>
+console.log('useROute', useRoute())
+const { path } = useRoute()
+
+const isBlog = computed(() => {
+    return path.includes('blog')
+})
+
+console.log('isBlog', isBlog.value)
+
+</script>
 <template>
     <nav class="navbar level is-fixed-top is-dark navbar-level">
         <div class="navbar-brand">
@@ -5,7 +16,13 @@
         </div>
         <div class="navbar-links">
             <NuxtLink to="/" class="title is-3">About</NuxtLink>
-            <NuxtLink to="/blog" class="title is-3">Blog</NuxtLink>
+            <NuxtLink to="/blog"
+                :class="[
+                    'title',
+                    'is-3',
+                    {'router-link-active' : isBlog},
+                    {'' : !isBlog},
+                ]">Blog</NuxtLink>
             <NuxtLink to="/contact" class="title is-3">Contact</NuxtLink>
         </div>
     </nav>
@@ -43,6 +60,10 @@
             align-self: center;
             margin-top: 8px;
         }
+    }
+
+    .router-link-active:not(.main-title) {
+        text-decoration: underline;
     }
 }
 </style>
