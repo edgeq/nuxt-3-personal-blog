@@ -40,5 +40,7 @@
 }
 .toc {
     width: 33%;
+    position: fixed;
+    right: 0;
 }
 </style>
