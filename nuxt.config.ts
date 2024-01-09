@@ -17,10 +17,11 @@ export default defineNuxtConfig({
       'Pixelify+Sans': {
         wght: '400..700'
       }
-    }
+    },
+    display: 'block'
   },
   image: {
-    dir: 'assets/img'
+    dir: 'assets/images'
   },
   modules: ['@nuxt/image', "@vueuse/nuxt", "@nuxtjs/google-fonts", "@nuxt/content"]
 })

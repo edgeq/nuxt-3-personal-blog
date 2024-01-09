@@ -1,6 +1,5 @@
 <script setup>
 const { data: posts } = await useAsyncData('blog', () => queryContent('blog').find())
-console.log(posts.value.length)
 </script>
 <template>
     <div class="hero-body container">
@@ -36,7 +35,9 @@ ul.blog-list {
         height: 100%;
         width: 100%;
         display: flex;
-
+        .card {
+            border-radius: 24px;
+        }
     }
 }
 </style>
