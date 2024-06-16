@@ -1,6 +1,6 @@
 <script setup>
-// TODO: script for updating image on load or timer...?
-const techStack = await queryContent('json/tech-stack').findOne()
+// TODO: figure out why this isn't working
+// const techStack = await queryContent('json/tech-stack').findOne()
 </script>
 
 <template>
