@@ -1,7 +1,8 @@
 <script setup>
 // TODO: script for updating image on load or timer...?
-const techStack = await queryContent('/json/tech-stack').findOne()
+const techStack = await queryContent('json/tech-stack').findOne()
 </script>
+
 <template>
     <section class="hero">
         <div :class="['hero-body', 'container', homePage.heroContainer]">
@@ -30,10 +31,10 @@ const techStack = await queryContent('/json/tech-stack').findOne()
             </div>
         </div>
     </section>
-    <div :class="['container', 'is-max-desktop', homePage.stackContainer]">
+    <!-- <div :class="['container', 'is-max-desktop', homePage.stackContainer]">
         <h2 class="title">TechStack.config()</h2>
-        <pre>{{ techStack['TECH STACK'] }}</pre>
-    </div>
+        <pre>{{ techStack['TECHSTACK'] }}</pre>
+    </div> -->
 </template>
 
 <style lang="scss" module="homePage">
