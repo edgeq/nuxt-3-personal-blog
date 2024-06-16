@@ -1,0 +1,27 @@
+@import "~/node_modules/bulma/sass/utilities/initial-variables.sass";
+@import "~/node_modules/bulma/sass/utilities/derived-variables.sass";
+
+
+html, body {
+    background-color: findLightColor($primary);;
+
+    h1, .title {
+      font-family: 'Pixelify Sans';
+    }
+
+    h2, h3 {
+       font-family: 'Inter', sans-serif;
+    }
+
+    ul li {
+      list-style-type: none;
+    }
+
+     main {
+      // height of navbar
+      margin-block-start: 6.5rem;
+      @media (min-width: 768px) {
+         margin-block-start: 4rem;
+      }
+   }
+}
